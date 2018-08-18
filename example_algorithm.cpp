@@ -2,7 +2,6 @@
 #include <essentia/streaming/algorithms/poolstorage.h>
 #include <essentia/algorithmfactory.h>
 #include <essentia/scheduler/network.h>
-#include "example_algorithm.cpp"
 
 
 using namespace std;
@@ -11,11 +10,8 @@ using namespace essentia::streaming;
 using namespace essentia::scheduler;
 
 
-int main(int argc, char* argv[]) {
-    return runExample(argc, argv);
+int runExample(int argc, char* argv[]) {
 
-
-    /*
     if (argc != 3) {
         cout << "ERROR: incorrect number of arguments." << endl;
         cout << "Usage: " << argv[0] << " audio_input yaml_output" << endl;
@@ -109,7 +105,6 @@ int main(int argc, char* argv[]) {
     essentia::shutdown();
 
     return 0;
-     */
 
 }
 
